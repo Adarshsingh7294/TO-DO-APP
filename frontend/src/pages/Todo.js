@@ -44,7 +44,7 @@ const Todo = () => {
         title: input.title.trim(),
         isCompleted: !!input.isCompleted,
       };
-      await axios.post("http://localhost:8080/api/v1/todos", todoToSend);
+      await axios.post("http://to-do-app-mgkl.vercel.app", todoToSend);
       setInput({ title: "", isCompleted: false });
       setRender((prev) => !prev);
     } catch (err) {
